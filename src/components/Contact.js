@@ -31,7 +31,7 @@ const Contact = () => {
                 <div className="contact-box">
                     <motion.div className="left-box" initial={{opacity: 0, y: '-50px'}} whileInView={verticalLeft}>
                         <div className="contact-heading">
-                            <p>Not open for any opportunities – Occupied with @Powerplay to ensure great product reaches to End-customer. However, if you have other request or question, don’t hesitate to use the form</p>
+                            <p>Currently not open to new opportunities, as I’m dedicated to my role at @Powerplay, ensuring a top-notch product reaches the end customer. However, if you have any other inquiries or requests, please feel free to use the form to reach out.</p>
                         </div>
                         <div className="contact-hello">
                             <p>Say Hello</p>

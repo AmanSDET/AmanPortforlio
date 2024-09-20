@@ -81,6 +81,7 @@ export default WorksWorks;
 */
 
 
+/*
 import React from "react";
 import "../styles/Experience.css";
 import { IoOpenOutline } from "react-icons/io5";
@@ -161,3 +162,79 @@ const Experience = () => {
 export default Experience;
 
 
+*/
+import React from "react";
+import "../styles/Experience.css";
+import { IoOpenOutline } from "react-icons/io5";
+import { FiBriefcase } from "react-icons/fi";
+import { ExperienceData } from "../data/WorkData"; // Correct data import
+import { motion } from "framer-motion";
+
+const Experience = () => {
+  const fade = {
+    opacity: 1,
+    transition: {
+      duration: 1.4,
+    },
+  };
+
+  return (
+    <>
+      <div className="experience" id="experience">
+        <div className="container">
+          <motion.div
+            initial={{ opacity: 0 }}
+            whileInView={fade}
+            viewport={{ once: true }}
+            className="heading"
+          >
+            <p className="heading-sub-text">My professional journey</p>
+            <p className="heading-text">Experience</p>
+          </motion.div>
+
+          <motion.div className="experience-box" initial={{ opacity: 0 }} whileInView={fade}>
+            {ExperienceData.map((experience, index) => {
+              return (
+                <div key={index}>
+                  <div className="experience-card">
+                    <div className="experience-container">
+                      <div className="top-experience">
+                        <FiBriefcase className="experience-icon" />
+                        <div className="right">
+                          {experience.link && (
+                            <a
+                              className="experience-link"
+                              href={experience.link}
+                              target="_blank"
+                              rel="noopener noreferrer" // To prevent security issues
+                            >
+                              <IoOpenOutline />
+                            </a>
+                          )}
+                        </div>
+                      </div>
+                      <div className="mid-experience">
+                        <p className="experience-title">
+                          {experience.role} @ {experience.company}
+                        </p>
+                        <p className="experience-duration">{experience.duration}</p>
+                        <p className="experience-desc">{experience.desc}</p>
+                      </div>
+                      <div className="bottom-experience">
+                        {experience.tech.map((tech, index) => {
+                          return <small key={index}>{tech}</small>;
+                        })}
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              );
+            })}
+          </motion.div>
+        </div>
+      </div>
+    </>
+  );
+};
+
+export default Experience;

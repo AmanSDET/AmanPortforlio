@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import "../styles/HeroSection.css";
 import { FaBars, FaTimes } from "react-icons/fa";
 import { BiDownload } from "react-icons/bi";
+import { BiMailSend } from 'react-icons/bi';
 import { AiOutlineArrowUp } from "react-icons/ai";
 import { animateScroll as scroll } from "react-scroll";
 import { motion } from "framer-motion";
@@ -100,16 +101,15 @@ const HeroSection = ({ nav, handleNav }) => {
 				</p>
 			</motion.div>
 			<motion.span
-				variants={contactVariants}
-				initial='hidden'
-				whileInView='visible'>
-				<a
-					href='Aman_CV.pdf'
-					download='Aman_CV'
-					className='hero-contact'>
-					Download CV <BiDownload className='cv-icon' />
-				</a>
-			</motion.span>
+              variants={contactVariants}
+              initial='hidden'
+              whileInView='visible'>
+              <a
+                href='mailto:amanchouhan@2801.com'
+                className='hero-contact'>
+                Contact Me <BiMailSend className='contact-icon' />
+              </a>
+            </motion.span>
 		</div>
 	);
 };
