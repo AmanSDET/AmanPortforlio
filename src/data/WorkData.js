@@ -49,19 +49,19 @@ export const WorkData = [
 export const ExperienceData = [
 	{
 		role: "Lead QA Engineer",
-		company: "TechCorp",
-		duration: "Jan 2021 - Present",
+		company: "Powerplay",
+		duration: "Oct 2021 - Present",
 		desc: "Led the QA team in ensuring the quality of multiple web applications, focusing on automation and performance testing.",
-		link: "https://techcorp.com",
-		tech: ["Selenium", "Jenkins", "JavaScript", "JIRA"],
+		link: "https://getpowerplay.in.com",
+		tech: [],
 	},
 	{
-		role: "QA Engineer",
-		company: "DevSolutions",
-		duration: "Mar 2018 - Dec 2020",
+		role: "Sr. QA Engineer",
+		company: "Dunzo",
+		duration: "March 2021 - Oct 2021",
 		desc: "Developed automated test scripts, collaborated with development teams to resolve issues, and ensured product reliability.",
-		link: "https://devsolutions.com",
-		tech: ["Python", "Postman", "TestRail", "Agile"],
+		link: "https://dunzo.com",
+		tech: [],
 	},
 	// Add more experience items as needed
 ];
