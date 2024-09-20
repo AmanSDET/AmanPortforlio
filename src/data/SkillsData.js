@@ -4,24 +4,18 @@ import {
 	FaFigma,
 	FaGithub,
 	FaHtml5,
-	FaReact,
-	FaSass
+	FaReact
 } from "react-icons/fa";
 import { RiVuejsLine } from "react-icons/ri";
 import {
-	SiAdobephotoshop,
 	SiFirebase,
-	SiFramer,
-	SiNextdotjs,
 	SiRedux,
-	SiStyledcomponents,
-	SiTailwindcss,
 	SiTypescript
 } from "react-icons/si";
 
 export const SkillsData = [
 	{
-		name: "Rest",
+		name: "RestAssured",
 		icon: <FaHtml5 />,
 	},
 	{
