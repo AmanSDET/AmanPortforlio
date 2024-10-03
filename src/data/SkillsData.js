@@ -4,16 +4,40 @@ import {
 	FaFigma,
 	FaGithub,
 	FaHtml5,
-	FaReact
+	FaReact,
+	FaJava
 } from "react-icons/fa";
 import { RiVuejsLine } from "react-icons/ri";
 import {
 	SiFirebase,
 	SiRedux,
-	SiTypescript
+	SiTypescript,
+	SiApachemaven,
+	SiSelenium,
+	SiJenkins,
+	SiJunit5,
+	SiFastapi,
+	SiPython,
+	SiPostgresql
 } from "react-icons/si";
 
 export const SkillsData = [
+	{
+        	name: "Java",
+        	icon: <FaJava />,
+    },
+    {
+            name: "JavaScript",
+            icon: <DiJavascript1 />,
+    },
+    {
+            name: "Python",
+            icon: <SiPython />,
+    },
+    {
+        name: "PostGreSQL",
+        icon: <SiPostgresql />,
+     },
 	{
 		name: "RestAssured",
 		icon: <FaHtml5 />,
@@ -22,26 +46,22 @@ export const SkillsData = [
 		name: "CSS",
 		icon: <FaCss3Alt />,
 	},
-	{
-		name: "Javascript",
-		icon: <DiJavascript1 />,
-	},
-	{
-		name: "TypeScript",
-		icon: <SiTypescript />,
-	},
-	{
-		name: "React Js",
-		icon: <FaReact />,
-	},
-	{
-		name: "Vue Js",
-		icon: <RiVuejsLine />, 
-	},
-	{
-		name: "Redux",
-		icon: <SiRedux />,
-	},
+    {
+        name: "Mavan",
+        icon: <SiApachemaven />,
+    },
+    {
+        name: "Selenium",
+        icon: <SiSelenium />,
+     },
+     {
+        name: "JUnit",
+        icon: <SiJunit5 />,
+     },
+     {
+        name: "Jenkins",
+        icon: <SiJenkins />,
+     },
 	{
 		name: "Firebase",
 		icon: <SiFirebase />,
@@ -50,8 +70,5 @@ export const SkillsData = [
 		name: "Git",
 		icon: <FaGithub />,
 	},
-	{
-		name: "Figma",
-		icon: <FaFigma />,
-	},
+
 ];
